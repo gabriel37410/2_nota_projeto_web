@@ -1,3 +1,7 @@
+# Setup Online (CodeSandbox)
+
+[Abrir no CodeSandbox](https://codesandbox.io/s/github/catolicasc-programacao/projeto_web)
+
 # Setup
 
 1. Instale o Node
@@ -9,3 +13,5 @@
 4. Inicie o projeto com o comando:
 
     DEBUG=projeto:* npm start
+
+
