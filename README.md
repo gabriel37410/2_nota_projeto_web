@@ -1,4 +1,4 @@
-# Setup
+# Setup do projeto
 
 1. Instale o Node
 2. Instale o VS Code
