@@ -9,3 +9,11 @@
     color: blue;
 }
 
+.testimony {
+    margin-bottom: 40px;
+}
+
+.testimonial-description {
+    display: block;
+    margin-bottom: 10px;
+}
