@@ -27,6 +27,12 @@ router.get('/produtos', function(req, res, next) {
   res.render('produto', { title: 'Produtos', produtos: produtos });
 });
 
+router.get('/carrinho', function(req, res, next) {
+  var produtos = produtosService.getProdutos();
+
+  res.render('carrinho', { title: 'Seu carrinho', produtos: produtos });
+});
+
 
 
 module.exports = router;

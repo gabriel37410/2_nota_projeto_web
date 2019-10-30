@@ -9,35 +9,40 @@
     <div class="container">
     
     <div class="card mb-3">
-    <h1 class="produtotitulo">Produtos</h1>
+    <h1 class="produtotitulo">Carrinho de compras</h1>
+
+
+    <img src="/images/construction.jpeg" class="card-img" alt="...">
+
+    
       <% produtos.forEach((produto) => { %>
 
         <div class="container ">
-
+          
             <div class="row">
               <div class="col-sm">
-                  <img src="<%= `/images/${produto.image}` %>" class="card-img" alt="...">
-              </div>
-
-              <div class="col-sm">
-                <br>
-                  <h3 class="card-title"><%= produto.nome %></h3>
-                  <p class="card-text"><%= produto.descricao %></p>
-                  <h5 class="preco" class="card-title"><%= produto.preco %></h5>
+                  <!-- Foto do produto -->
               </div>
 
               <div class="col-sm">
                 <br>
                 <br>
                 <br>
-                  <a href="/produtos" class="btn btn-success">Adicionar ao carrinho</a>
+                  <!-- Nome do produto -->
+              </div>
+
+              <div class="col-sm">
+                <br>
+                <br>
+                <br>
+                    <!-- Foto do produto -->
               </div>
 
             </div>
           </div>
       <% }); %>
-      <div class="bfinalizar">
-          <a href="/carrinho" class="btn btn-success">Finalizar e ir para o carrinho de compras</a>
+      <div class="blimpar">
+        <a href="/carrinho"  class="btn btn-success">Limpar carrinho de compras</a>
       </div>
     </div>
     </div>
