@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nome": "Banana",
+        "descricao": "Fruta boa",
+        "preco": "R$ 5,00",
+        "image": "image-1572392501659.png"
+    },
+    {
+        "id": 2,
+        "nome": "Maça",
+        "descricao": "Fruta que não mata a fome",
+        "preco": "R$ 3,00",
+        "image": "image-1572392524462.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "Melão",
+        "descricao": "Só fruta",
+        "preco": "R$ 10,00",
+        "image": "image-1572392556995.jpg"
+    }
+]

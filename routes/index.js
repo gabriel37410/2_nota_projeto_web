@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var postsService = require('../services/postsService');
+var produtosService = require('../services/produtosService')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,5 +20,13 @@ router.get('/posts/:postId', function(req, res, next) {
   res.render('post', { title: post.title, post: post });
 
 });
+
+router.get('/produtos', function(req, res, next) {
+  var produtos = produtosService.getProdutos();
+
+  res.render('produto', { title: 'Produtos', produtos: produtos });
+});
+
+
 
 module.exports = router;

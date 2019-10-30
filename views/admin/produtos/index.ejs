@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+  <%- include('../../imports'); -%>
+</head>
+<body>
+  <%- include('../../navbar'); -%>
+  <div class="container">
+    <div class="row">
+        <h1>Administração de Produtos</h1>
+    </div>
+
+    <div class="row mb-2">
+        <a href="/admin/produtos/create" class="btn btn-success">Novo Produto</a>
+    </div>
+
+    <div class="row">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% produtos.forEach((produto) => { %>
+                <tr>
+                  <td><%= produto.id %></td>
+                  <td><%= produto.nome %></td>
+                  <td><%= produto.preco %></td>
+                </tr>
+              <% }); %>
+              
+            </tbody>
+          </table>
+    </div>
+  </div>
+</body>
+</html>
